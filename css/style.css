@@ -1,0 +1,130 @@
+#index{
+    background-image: -webkit-linear-gradient(right, #B1B1AF 4%, #484846 98%);
+    background-image: linear-gradient(to left, #B1B1AF 4%, #484846 98%);
+}
+h1{
+    margin: 15px;
+    font-size: 3.0rem;
+}
+h1, .menu-box li{
+    color: #fff;
+}
+.menu-box{
+    display:flex;
+    justify-content: flex-end;
+}
+.menu-box li{
+    padding:1%;
+}
+#content{
+    margin: 8% auto;
+}
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img img{
+    width: 30%;
+    margin:2% 0;
+}
+
+
+
+
+.inner {
+    width: 980px;
+    margin: 0 auto 1% auto;
+}
+.inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+ 
+/* header */
+#top-head {
+    top: -100px;
+    position: absolute;
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 30px 0 0;
+    line-height: 1;
+    z-index: 999;
+}
+#top-head a,
+#top-head {
+    color: #fff;
+    text-decoration: none;
+}
+#top-head .inner {
+    position: relative;
+}
+#global-nav ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    width: 100%;
+}
+#global-nav ul li {
+    float: left;
+}
+#global-nav ul li a {
+    padding: 0 30px;
+}
+ 
+/* Fixed */
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 10px;
+    height: 55px;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+ 
+/* Toggle Button */
+#nav-toggle {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #666;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+}
