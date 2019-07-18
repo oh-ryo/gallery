@@ -1,16 +1,16 @@
 //ハンバーガーメニュートップ戻り用
-var menutop = document.createElement("li");
+const menutop = document.createElement("li");
 menutop.classList.add("menu-top");
 menutop.innerHTML = "TOP";
 document.getElementsByClassName("menu-box") [0].appendChild(menutop);
-$('.menu-top').on('click', function(){
+$('.menu-top').on('click', ()=>{
     $(function(){
         location.reload();
     });
 });
 
 for(let i = 0, len = menulist.length; i < len; i++) {
-    var menu = document.createElement("li");
+    const menu = document.createElement("li");
     menu.classList.add(menulist[i]);
     menu.innerHTML = menulist[i].toUpperCase();
     document.getElementsByClassName("menu-box") [0].appendChild(menu);
@@ -18,9 +18,9 @@ for(let i = 0, len = menulist.length; i < len; i++) {
 
 (function($) {
     $(function() {
-        var $header = $('#top-head');
+        const $header = $('#top-head');
         // Nav Fixed
-        $(window).scroll(function() {
+        $(window).scroll(()=>{
             if ($(window).scrollTop() > 350) {
                 $header.addClass('fixed');
             } else {
@@ -28,7 +28,7 @@ for(let i = 0, len = menulist.length; i < len; i++) {
             }
         });
         // Nav Toggle Button
-        $('#nav-toggle').click(function(){
+        $('#nav-toggle').click(()=>{
             $header.toggleClass('open');
         });
     });
